@@ -36,6 +36,28 @@ Enjoy 浏览器插件已经上线，支持 YouTube 和 Netflix。可访问 [Chro
 
 新版桌面版将会是对网页版的套壳和增强，即将发布。
 
+## 本地开发
+
+建议在仓库根目录执行命令：
+
+```bash
+yarn install
+yarn env:check
+./scripts/dev-enjoy.sh
+```
+
+也可以使用（更推荐这个入口）：
+
+```bash
+yarn oneclick:dev
+```
+
+`yarn oneclick:dev` 现在会直接走更稳定的 Node 启动器，而不是直接依赖 `electron-forge start` 的 CLI 路径。
+
+仓库默认使用：
+- Node 22（见 `.nvmrc`）
+- Python 3.11（见 `.npmrc`）
+- Electron 国内镜像（见 `.npmrc`）
 
 ## 相关阅读
 

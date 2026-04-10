@@ -21,6 +21,7 @@
     "create-migration": "zx ./src/main/db/create-migration.mjs",
     "download-dictionaries": "zx ./scripts/download-dictionaries.mjs",
     "download": "yarn run download-dictionaries",
+    "postinstall": "bash scripts/fix-ffmpeg.sh",
     "sourcemap": "bugsnag-source-maps upload-node --directory .vite/build --app-version 0.7.9"
   },
   "keywords": [],
